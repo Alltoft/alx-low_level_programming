@@ -1,11 +1,9 @@
 #include "main.h"
- /**
-  * print_alphabet_x10 - print ten times
-  *
-  * Return: void
-  */
-
+/*
+ * print_alphabet_x10 - Prints the English alphabet 10 times.
+ */
 void print_alphabet_x10(void)
+
 {
 	char x = 'a';
 	char j = 0;
