@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * print_line - it draws a diagonal on the tieminal
+ * print_diagonal - it draws a diagonal on the tieminal
  * @n: is the number of times the character \ should be printed
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int a = 0;
 	char b = 0;
