@@ -4,8 +4,8 @@
  */
 void more_numbers(void)
 {
-	int a = '0';
-	int j = '0';
+	int a = 0;
+	int j = 0;
 
 	while (j < 10)
 	{
@@ -13,13 +13,13 @@ void more_numbers(void)
 		{
 		if (a >= 10)
 		{
-		_putchar(a / 10 + '0');
+		_putchar('1');
 		}
 		_putchar(a % 10 + '0');
 		a++;
 		}
 
-	a = '0';
+	a = 0;
 	_putchar('\n');
 	j++;
 	}
