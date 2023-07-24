@@ -18,5 +18,4 @@ void rev_string(char *s)
 	a--;
 	s--;
 	}
-	_putchar('\n');
 }
