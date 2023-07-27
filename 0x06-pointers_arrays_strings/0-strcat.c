@@ -7,15 +7,18 @@
  */
 char *_strcat(char *dest, char *src)
 {
+	char *destptr = dest;
+
 	while (*dest != '\0')
 	{
-	_putchar(*dest);
 	dest++;
 	}
 	while (*src != '\0')
 	{
-	_putchar(*src);
+	*dest = *src;
+	dest++;
 	src++;
 	}
-	return (dest);
+	dest = '\0';
+	return (destptr);
 }
