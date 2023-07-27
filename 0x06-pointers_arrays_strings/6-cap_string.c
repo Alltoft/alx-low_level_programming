@@ -6,12 +6,14 @@
  */
 char *cap_string(char *ptr)
 {
+	char *origin = ptr;
+	int f = 1;
 	while (*ptr != '\0')
 	{
 	if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' || *ptr == ',' ||
 	*ptr == ';' || *ptr == '.' || *ptr == '!' || *ptr == '?' ||
 	*ptr == '"' || *ptr == '(' || *ptr == ')' || *ptr == '{' ||
-	*ptr == '}')
+	*ptr == '}' || f)
 	{
 	ptr++;
 	if (*ptr >= 'a' && *ptr <= 'z')
@@ -21,6 +23,7 @@ char *cap_string(char *ptr)
 	ptr--;
 	}
 	ptr++;
+	f = 0;
 	}
-	return (ptr);
+	return (origin);
 }
