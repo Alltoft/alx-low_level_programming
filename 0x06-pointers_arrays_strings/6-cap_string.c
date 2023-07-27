@@ -8,6 +8,7 @@ char *cap_string(char *ptr)
 {
 	char *origin = ptr;
 	int f = 1;
+
 	while (*ptr != '\0')
 	{
 	if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' || *ptr == ',' ||
