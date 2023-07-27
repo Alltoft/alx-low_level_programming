@@ -10,16 +10,17 @@ char *cap_string(char *ptr)
 
 	while (*ptr != '\0')
 	{
-	while (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' || *ptr == ',' ||
+	if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' || *ptr == ',' ||
 	*ptr == ';' || *ptr == '.' || *ptr == '!' || *ptr == '?' ||
 	*ptr == '"' || *ptr == '(' || *ptr == ')' || *ptr == '{' ||
 	*ptr == '}')
 	{
 	ptr++;
-	}
 	if (*ptr >= 'a' && *ptr <= 'z')
 	{
 	*ptr = *ptr - 32;
+	}
+	ptr--;
 	}
 	ptr++;
 	}
