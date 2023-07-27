@@ -6,8 +6,6 @@
  */
 char *cap_string(char *ptr)
 {
-	char *origin = ptr;
-
 	while (*ptr != '\0')
 	{
 	if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' || *ptr == ',' ||
@@ -24,5 +22,5 @@ char *cap_string(char *ptr)
 	}
 	ptr++;
 	}
-	return (origin);
+	return (ptr);
 }
