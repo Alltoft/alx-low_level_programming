@@ -3,7 +3,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int i = 1;
 
-	while (*s = '\0')
+	while (*s != '\0')
 	{
 	if (*s == *accept)
 	{
