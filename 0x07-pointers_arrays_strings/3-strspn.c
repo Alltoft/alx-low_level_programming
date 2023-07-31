@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * _strspn - gets the length of a prefix
+ * @s: first string
+ * @accept: second string
+ * Return: i
+ */
 unsigned int _strspn(char *s, char *accept)
 {
 	int i = 1;
@@ -11,6 +17,10 @@ unsigned int _strspn(char *s, char *accept)
 	}
 	s++;
 	i++;
+	}
+	if (*s == *accept)
+	{
+		return (i);
 	}
 	return (0);
 }
