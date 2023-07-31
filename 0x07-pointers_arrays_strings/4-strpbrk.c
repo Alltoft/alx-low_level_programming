@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * *strpbrk - searches a string
+ * *_strpbrk - searches a string
  * @s: first string
  * @accept: second string
  * Return: 0
  */
-char *strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	while (*s != '\0')
 	{
