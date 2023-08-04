@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
  * main - sum numbers
  * @argc: number of variables
@@ -15,7 +16,8 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	while (i < argc)
 	{
-	if (*argv[i] < 48 || *argv[i] > 57)
+	/*if (*argv[i] < 48 || *argv[i] > 57)*/
+	if (strspn(argv[i], "0123456789") != strlen(argv[i]))
 	{
 		printf("Error\n");
 		return (1);
