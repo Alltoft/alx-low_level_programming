@@ -30,6 +30,4 @@ char *_strdup(char *str)
 		i++;
 	}
 	return (f);
-	}
-	free(f);
 }
