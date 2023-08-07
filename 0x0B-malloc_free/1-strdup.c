@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
+#include <string.h>
 /**
  * _strdup - returns a pointer to a newly allocated space in memory,
  * which contains a copy of the string given as a parameter.
@@ -11,19 +12,21 @@ char *_strdup(char *str)
 {
 	char *f;
 	int i = 0;
+	int n;
 
-	f = malloc(sizeof(char) * *str);
-	if (str == 0)
+	n = strlen(str);
+	f = malloc(sizeof(char) * (n + 1));
+	if (str == NULL)
 	{
 		return (NULL);
 	}
-	else if (f == 0)
+	else if (f == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
-	while (i <= *str)
+	while (i <= n)
 	{
 		f[i] = str[i];
 		i++;
