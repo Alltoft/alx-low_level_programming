@@ -20,16 +20,10 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	f = malloc(sizeof(char) * (n + 1));
-	/*if (str == NULL)
-	{
-		return (NULL);
-	}*/
 	if (f == NULL)
 	{
 		return (NULL);
 	}
-	else
-	{
 	while (i <= n)
 	{
 		f[i] = str[i];
