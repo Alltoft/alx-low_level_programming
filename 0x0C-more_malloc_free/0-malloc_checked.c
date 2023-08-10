@@ -7,18 +7,12 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	char *n;
-	unsigned int i = 0;
+	void *n;
 
-	n = malloc(sizeof(int) * b);
+	n = malloc(b);
 	if (n == NULL)
 	{
 		exit(98);
-	}
-	while (i < b)
-	{
-		n[i] = b;
-		i++;
 	}
 	return (n);
 }
