@@ -20,11 +20,8 @@ int *array_range(int min, int max)
 
 	while (min <= max)
 	{
-		arr[i] = min;
+		arr[i] = min + 1;
 		i++;
-		min++;
 	}
-	arr[max + 1] = '\0';
 	return (arr);
 }
-https://www.youtube.com/shorts/LDKdfRjdAe8
