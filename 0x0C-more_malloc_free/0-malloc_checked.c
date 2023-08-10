@@ -1,5 +1,10 @@
 #include <stdlib.h>
 #include "main.h"
+/**
+ * *malloc_checked - check for memory
+ * @b: size of memory
+ * Return: the allocated memorie
+ */
 void *malloc_checked(unsigned int b)
 {
 	char *n;
@@ -8,7 +13,7 @@ void *malloc_checked(unsigned int b)
 	n = malloc(sizeof(int) * b);
 	if (n == NULL)
 	{
-		exit (98);
+		exit(98);
 	}
 	while (i < b)
 	{
