@@ -32,16 +32,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		if (i < h)
 			ss[i] = s1[i];
 
-		else if (i >= h && x < n)
+		else if (i >= h && x <= n)
 		{
 			ss[i] = s2[x];
 			x++;
 		}
 		i++;
 	}
-	if (ss == [h + j - 1])
-		ss[h + j] = '\0';
-	else if (ss != [h + j - 1])
-		ss[h + n] = '\0';
+	ss[h + n] = '\0';
 	return (ss);
 }
