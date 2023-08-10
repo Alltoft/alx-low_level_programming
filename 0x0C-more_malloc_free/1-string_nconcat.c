@@ -40,4 +40,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ss[h + n] = '\0';
 	if (n > j)
 		ss[h + j] = '\0';
+	return (ss);
 }
