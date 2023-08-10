@@ -27,3 +27,4 @@ int *array_range(int min, int max)
 	arr[max + 1] = '\0';
 	return (arr);
 }
+https://www.youtube.com/shorts/LDKdfRjdAe8
