@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+/**
+ * get_op_func - does nothing
+ * @s: argument
+ * Return: result
+ */
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
