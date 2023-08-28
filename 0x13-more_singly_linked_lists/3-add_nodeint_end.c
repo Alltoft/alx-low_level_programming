@@ -1,4 +1,10 @@
 #include "lists.h"
+/**
+ * *add_nodeint_end - add node at the end
+ * @head: git push
+ * @n: number of strings
+ * Return: lnd
+ */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *lnd, *ptemp;
@@ -16,7 +22,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	{
 		ptemp = *head;
 		while (ptemp->next != NULL)
-			ptempt = ptempt->next;
+			ptemp = ptemp->next;
 
 		ptemp->next = lnd;
 	}
