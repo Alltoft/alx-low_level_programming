@@ -2,17 +2,17 @@
 
 /**
  * listint_len - count number of elements
- * @h: the way of the sword
+ * @h: the way of sword
  * Return: number of soliders
  */
 
 size_t listint_len(const listint_t *h)
 {
-	int count = 0;
+	unsigned int count = 0;
 
-	while (h)
+	while (head)
 	{
-		h = h->next;
+		head = head->next;
 		count++;
 	}
 	return (count);
