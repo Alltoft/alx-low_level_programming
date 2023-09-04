@@ -9,7 +9,6 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	char *buf;
 	FILE *fp;
 	int w;
 
@@ -18,7 +17,6 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 
 	w = strlen(text_content);
-	buf = malloc(sizeof(char) * w);
 
 	fputs(text_content, fp);
 
