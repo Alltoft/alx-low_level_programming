@@ -14,3 +14,6 @@
 
 ## For more INFO:
 [click](https://www.gnu.org/software/make/manual/html_node/) [click](https://www.gnu.org/software/make/manual/html_node/) itself
+
+#MANDATORY TASK:
+follow this [account](https://github.com/Alltoft)
