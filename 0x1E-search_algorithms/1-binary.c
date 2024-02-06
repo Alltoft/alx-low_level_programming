@@ -39,11 +39,11 @@ int binary_search(int *array, size_t size, int value)
 		}
 		else if (array[mid] < value)
 		{
-			n = array[mid] + 1;
+			n = mid + 1;
 		}
 		else
 		{
-			size = array[mid];
+			size = mid;
 		}
 	}
 	return (-1);
